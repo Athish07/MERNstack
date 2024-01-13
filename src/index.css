@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+:root {
+  --primary: #3498db;
+  --accent: #e74c3c;
+  --text-dark: #34495e;
+  --text-light: #ecf0f1;
+  --background-dark: #2c3e50;
+  --background-light: #fff;
+}
+
+body {
+  background: var(--background-dark);
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: var(--text-light);
+}
+
+header {
+  background: var(--primary);
+  padding: 15px 0;
+}
+
+header.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: var(--text-light);
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 1.2em;
+}
+
+.pages {
+  max-width: 1200px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.home {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.workout-details {
+  position: relative;
+  background: var(--background-light);
+  border-radius: 8px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adjusted box shadow */
+  transition: background 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
+}
+
+.workout-details:hover {
+  background: #ecf0f1;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Adjusted box shadow on hover */
+}
+
+/* ... rest of the styles remain unchanged */
+
+.workout-details h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.5em;
+  color: var(--primary);
+}
+
+.workout-details p {
+  margin: 0;
+  font-size: 1em;
+  color: var(--text-dark);
+}
+
+.workout-details span {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  font-size: 1.2em;
+}
+
+label,
+input {
+  display: block;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 12px;
+  width: 100%;
+  border: 1px solid var(--primary);
+  border-radius: 6px;
+  box-sizing: border-box;
+  background-color: var(--background-light);
+  color: var(--text-dark);
+}
+
+form.button {
+  background: var(--accent);
+  border: 0;
+  color: var(--text-light);
+  padding: 12px;
+  font-family: "Poppins", sans-serif;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+div.error {
+  padding: 15px;
+  background: #fff;
+  border: 1px solid #e74c3c;
+  border-radius: 6px;
+  color: #e74c3c;
+  margin-bottom: 20px;
+  color: var(--text-dark);
+}
